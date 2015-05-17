@@ -1,0 +1,1 @@
+(fn perfect? [x] (= x (apply + (filter #(zero? (mod x %)) (range 1 x)))))

@@ -1,0 +1,1 @@
+(fn z [p q] (if (< p q) [p] (conj (z (quot p q) q) (mod p q))))

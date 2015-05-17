@@ -1,0 +1,1 @@
+(fn [xs] (reduce merge (map (fn [[k v]] {k (count v)}) (group-by identity xs))))
